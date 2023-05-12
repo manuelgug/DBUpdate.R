@@ -7,6 +7,8 @@ This script is designed to add library and/or sequencing data and/or update the 
 * `openxlsx`
 * `optparse`
 
+*Note: the script automatically installs the dependencies if not found in your system*
+
 ## User Inputs 
 
 * `-l` or `--lib`: Path to the library file
@@ -15,7 +17,7 @@ This script is designed to add library and/or sequencing data and/or update the 
 * `-d` or `--db`: Path to the database file (mandatory)
 * `-o` or `--out`: Path to the output file
 
-*Note: all inputs must be in xlsx format and with the correct templates*
+*Note: all inputs must be in xlsx format and with the same formt as the lab templates*
 
 ## Usage
 
