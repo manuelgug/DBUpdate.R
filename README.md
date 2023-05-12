@@ -22,12 +22,12 @@ This script is designed to add library and/or sequencing data and/or update the 
 ## Usage
 
 ```
-Rscript DB_update.R -l /path/to/library.xlsx -s /path/to/sequencing.xlsx -c /path/to/scan.xlsx -d /path/to/database.xlsx -o /path/to/output.xlsx
+Rscript DBUpdate.R -l /path/to/library.xlsx -s /path/to/sequencing.xlsx -c /path/to/scan.xlsx -d /path/to/database.xlsx -o /path/to/output.xlsx
 ```
 or
 
 ```
-Rscript DB_update.R --lib=/path/to/library.xlsx -seq=/path/to/sequencing.xlsx -scan=/path/to/scan.xlsx --db=/path/to/database.xlsx --out=/path/to/output.xlsx
+Rscript DBUpdate.R --lib=/path/to/library.xlsx -seq=/path/to/sequencing.xlsx -scan=/path/to/scan.xlsx --db=/path/to/database.xlsx --out=/path/to/output.xlsx
 ```
 
 
