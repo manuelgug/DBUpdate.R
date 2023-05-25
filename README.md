@@ -1,3 +1,10 @@
+     _|_|_|    _|_|_|    _|    _|                  _|              _|                    _|_|_|   
+     _|    _|  _|    _|  _|    _|  _|_|_|      _|_|_|    _|_|_|  _|_|_|_|    _|_|        _|    _| 
+     _|    _|  _|_|_|    _|    _|  _|    _|  _|    _|  _|    _|    _|      _|_|_|_|      _|_|_|   
+     _|    _|  _|    _|  _|    _|  _|    _|  _|    _|  _|    _|    _|      _|            _|    _| 
+     _|_|_|    _|_|_|      _|_|    _|_|_|      _|_|_|    _|_|_|      _|_|    _|_|_|  _|  _|    _| 
+                                   _|                                                              
+                                   _|                                                                                                                                                         
 # DBUpdate.R
 This script is designed to add library and/or sequencing data and/or update the GenMoz Lab database based on tube barcodes.
 
