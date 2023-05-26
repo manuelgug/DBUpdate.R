@@ -73,7 +73,7 @@ library_filename <- LIB_FILE
 sequencing_filename <- SEQ_FILE
 
 #Import files
-db <- read_excel(DB_FILE)
+db <- read_excel(DB_FILE, col_types = "text") #converts all values to text, including NA
 
 tryCatch({
   lib <- suppressMessages(read_excel(library_filename, sheet = "Wilmut Scan Output"))
@@ -126,7 +126,7 @@ if(class(lib)[1] != "try-error"){
   
   # define function to check if a specific position already has data
   has_data <- function(x) {
-    !is.na(x) & !is.null(x) & x != ""
+    !is.na(x) & !is.null(x) & x != "" & x != "NA"
   }
   
   # loop through positions and update lib columns accordingly
@@ -161,7 +161,7 @@ if (class(sequencing)[1] != "try-error") {
   
   # define function to check if a specific position already has data
   has_data <- function(x) {
-    !is.na(x) & !is.null(x) & x != ""
+    !is.na(x) & !is.null(x) & x != "" & x != "NA"
   }
   
   matching_idx <- match(db$TubeBarcode, sequencing$Barcode, nomatch = 0)
