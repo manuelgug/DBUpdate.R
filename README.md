@@ -45,6 +45,7 @@ The script will output a modified version of the input database file. If an outp
 * Import the library, sequencing, and scan files (could be either or).
 * Clean the data in the imported data frames.
 * If a library file was provided, merge it with the database data frame based on the tube barcode.
-* If a sequencing file was provided, add the run name to the database data frame.
-* If a scan file was provided, update the database with the new RackBarcodes and positions.
-* Save the modified database to an output file or to a default file name with timetamp.
+* If a sequencing file was provided, merge it with the database data frame based on the tube barcode.
+* If a scan file was provided, update the database with the new RackBarcodes and their resepctive positions.
+* Reorder column names.
+* Save the modified database to an output file or to a default file name with timetamp. Outputs are never overtwritten.
