@@ -20,7 +20,7 @@ This script is designed to add library and/or sequencing data and/or update the 
 *All files must bin in excel format (.xlsx or .xls)*
 
 * **GenMoz database**
-     * Columns: ```NUM, STUDY, SAMPLE.ID, EXTRACTION, VOL, TubeBarcode, CT, PARASITEMIA, GROUP, LIBRARY1, LIBRARY2, LIBRARY3, LIBRARY4, LIBRARY5, RackBarcode, Position, FREEZER", RUN, RUN2, RUN3, RUN4, RUN5, NOTES```
+     * Columns: ```NUM, STUDY, SAMPLE.ID, EXTRACTION, VOL, TubeBarcode, CT, PARASITEMIA, GROUP, LIBRARY1, LIBRARY2, LIBRARY3, LIBRARY4, LIBRARY5, RackBarcode, Position, FREEZER, RUN, RUN2, RUN3, RUN4, RUN5, NOTES```
 * **Library file**
      * Tab: ```Wilmut Scan Output``` 
      * Columns: ```Well, Sample ID, Library, Plate, Position, Barcode, Barcode check, Parasitemia, Group, Check```
