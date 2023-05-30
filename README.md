@@ -16,15 +16,22 @@ This script is designed to add library and/or sequencing data and/or update the 
 
 *Note: the script automatically installs the dependencies if not found in your system*
 
-## User Inputs 
+## Input files
+*All files must bin in excel format (.xlsx or .xls)*
 
-* `-l` or `--lib`: Path to the library file
-* `-s` or `--seq`: Path to the sequencing file
-* `-c` or `--scan`: Path to the scan file
-* `-d` or `--db`: Path to the database file (mandatory)
-* `-o` or `--out`: Path to the output file
+* **GenMoz database**
+     * Columns: ```NUM, STUDY, SAMPLE.ID, EXTRACTION, VOL, TubeBarcode, CT, PARASITEMIA, GROUP, LIBRARY1, LIBRARY2, LIBRARY3, LIBRARY4, LIBRARY5, RackBarcode, Position, FREEZER", RUN, RUN2, RUN3, RUN4, RUN5, NOTES```
+* **Library file**
+     * Tab: ```Wilmut Scan Output``` 
+     * Columns: ```Well, Sample, ID, Library, Plate, Position, Barcode, Barcode check, Parasitemia, Group, Check```
+* **Sequncing file**
+    * Filename: name of the sequencing run
+    * Tab: ```Balancing```
+    * Columns: ```Well, Sample ID, Plate, Position, Barcode, Parasitemia, Group, Volume```
 
-*Note: all inputs must be in xlsx format and with the same formt as the lab templates*
+* **Scan file**
+     * Columns: ```RackBarcode, Tube Row Text, Tube Column, Position, TubeBarcode```
+
 
 ## Usage
 
@@ -42,10 +49,11 @@ Rscript DBUpdate.R --lib=/path/to/library.xlsx -seq=/path/to/sequencing.xlsx -sc
 The script will output a modified version of the input database file. If an output file path is specified, the modified database will be saved to that path. Otherwise, the modified database will be saved to a file named `GenMoz_LAB_DB_yyyy-mm-dd_HH-MM-SS.xlsx` in the current working directory.
 
 ## Functionality
+* Import the GenMoz Lab database.
 * Import the library, sequencing, and scan files (could be either or).
 * Clean the data in the imported data frames.
 * If a library file was provided, merge it with the database data frame based on the tube barcode.
 * If a sequencing file was provided, merge it with the database data frame based on the tube barcode.
 * If a scan file was provided, update the database with the new RackBarcodes and their resepctive positions.
-* Reorder column names.
-* Save the modified database to an output file or to a default file name with timetamp. Outputs are never overtwritten.
+* Reorder columns, final formatting.
+* Save the modified database to a new output file with timestamp in the name (outputs are never overtwritten).
