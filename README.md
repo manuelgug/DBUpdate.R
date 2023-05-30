@@ -17,7 +17,7 @@ This script is designed to add library and/or sequencing data and/or update the 
 *Note: the script automatically installs the dependencies if not found in your system*
 
 ## Input files
-*All files must bin in excel format (.xlsx or .xls)*
+All files must bin in excel format (.xlsx or .xls)
 
 * **GenMoz database**
      * Columns: ```NUM, STUDY, SAMPLE.ID, EXTRACTION, VOL, TubeBarcode, CT, PARASITEMIA, GROUP, LIBRARY1, LIBRARY2, LIBRARY3, LIBRARY4, LIBRARY5, RackBarcode, Position, FREEZER, RUN, RUN2, RUN3, RUN4, RUN5, NOTES```
